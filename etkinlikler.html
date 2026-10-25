@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101b2d">
+    <meta name="description" content="Kampüs Yazılım Kulübü'nün atölye, seminer ve buluşmalarını keşfedin.">
+    <title>Etkinlikler | Kampüs Yazılım Kulübü</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container navbar">
+            <a class="logo" href="index.html" aria-label="Kampüs Yazılım Kulübü ana sayfa">
+                <span class="logo-mark" aria-hidden="true">&lt;/&gt;</span>
+                <span>Kampüs <strong>Yazılım</strong></span>
+            </a>
+            <nav class="main-nav" aria-label="Ana menü">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="etkinlikler.html" class="active" aria-current="page">Etkinlikler</a>
+                <a href="hakkimizda.html">Hakkımızda</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="events-hero">
+            <div class="container hero-content">
+                <p class="eyebrow"><span></span> Birlikte öğren, birlikte üret</p>
+                <h1>Fikrini al, <span>etkinliğe katıl.</span></h1>
+                <p class="hero-description">Yeni beceriler keşfet, topluluğumuzla tanış ve bir sonraki projen için ilhamını bul.</p>
+            </div>
+            <div class="hero-decoration hero-decoration-one" aria-hidden="true"></div>
+            <div class="hero-decoration hero-decoration-two" aria-hidden="true"></div>
+        </section>
+
+        <section class="events-section container" aria-labelledby="events-heading">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow eyebrow-dark">Takviminde yer aç</p>
+                    <h2 id="events-heading">Yaklaşan etkinlikler</h2>
+                </div>
+                <p class="section-note">Merak ettiğin konuyu ara ve bize katıl.</p>
+            </div>
+
+            <div class="event-tools">
+                <label class="search-field" for="event-search">
+                    <span class="search-icon" aria-hidden="true"></span>
+                    <input id="event-search" type="search" placeholder="Etkinlik, konu veya konum ara..." autocomplete="off">
+                </label>
+                <button class="clear-button" id="clear-search" type="button" disabled>Temizle</button>
+                <p class="results-count" id="results-count" aria-live="polite" aria-atomic="true">6 etkinlik gösteriliyor</p>
+            </div>
+
+            <p class="empty-state" id="no-results" role="status" hidden>
+                <span class="empty-state-icon" aria-hidden="true">⌕</span>
+                <strong>Aramana uygun etkinlik bulamadık.</strong>
+                <span>Farklı bir kelime deneyebilir ya da aramayı temizleyebilirsin.</span>
+            </p>
+
+            <div class="event-grid" id="event-list">
+                <article class="event-card">
+                    <div class="event-visual visual-code">
+                        <span class="event-category">Atölye</span>
+                        <span class="visual-symbol" aria-hidden="true">{ }</span>
+                        <span class="visual-caption">01 / WEB</span>
+                    </div>
+                    <div class="event-body">
+                        <p class="event-date"><span aria-hidden="true">◷</span> 12 Kasım 2026 <span class="date-dot"></span> 14.00</p>
+                        <h3>Web Geliştirmeye İlk Adım</h3>
+                        <p class="event-description">HTML ve CSS ile kendi web sayfanı oluştur. Temelleri birlikte öğrenip ilk projenle atölyeden ayrıl.</p>
+                        <div class="event-footer">
+                            <span class="event-location"><span aria-hidden="true">⌖</span> Mühendislik Fakültesi</span>
+                            <a href="mailto:yazilimkulubu@kampus.edu.tr?subject=Web%20Geli%C5%9Ftirme%20At%C3%B6lyesi" aria-label="Web Geliştirmeye İlk Adım etkinliğine katılım için iletişim kur">Katıl <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="event-card">
+                    <div class="event-visual visual-ai">
+                        <span class="event-category">Seminer</span>
+                        <span class="visual-symbol" aria-hidden="true">✳</span>
+                        <span class="visual-caption">02 / AI</span>
+                    </div>
+                    <div class="event-body">
+                        <p class="event-date"><span aria-hidden="true">◷</span> 18 Kasım 2026 <span class="date-dot"></span> 16.30</p>
+                        <h3>Yapay Zekâ: Bugün ve Ötesi</h3>
+                        <p class="event-description">Üretken yapay zekânın çalışma hayatını nasıl dönüştürdüğünü konuşacağımız ilham verici bir buluşma.</p>
+                        <div class="event-footer">
+                            <span class="event-location"><span aria-hidden="true">⌖</span> Merkez Konferans Salonu</span>
+                            <a href="mailto:yazilimkulubu@kampus.edu.tr?subject=Yapay%20Zeka%20Semineri" aria-label="Yapay Zekâ seminerine katılım için iletişim kur">Katıl <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="event-card">
+                    <div class="event-visual visual-data">
+                        <span class="event-category">Atölye</span>
+                        <span class="visual-symbol" aria-hidden="true">⌘</span>
+                        <span class="visual-caption">03 / PYTHON</span>
+                    </div>
+                    <div class="event-body">
+                        <p class="event-date"><span aria-hidden="true">◷</span> 21 Kasım 2026 <span class="date-dot"></span> 13.00</p>
+                        <h3>Python ile Veri Dünyası</h3>
+                        <p class="event-description">Python'ın gücünü keşfet; gerçek bir veri setini analiz ederek anlamlı sonuçlara ulaşmayı dene.</p>
+                        <div class="event-footer">
+                            <span class="event-location"><span aria-hidden="true">⌖</span> B Blok, Lab 204</span>
+                            <a href="mailto:yazilimkulubu@kampus.edu.tr?subject=Python%20Veri%20Atolyesi" aria-label="Python ile Veri Dünyası atölyesine katılım için iletişim kur">Katıl <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="event-card">
+                    <div class="event-visual visual-community">
+                        <span class="event-category">Buluşma</span>
+                        <span class="visual-symbol" aria-hidden="true">◎</span>
+                        <span class="visual-caption">04 / COMMUNITY</span>
+                    </div>
+                    <div class="event-body">
+                        <p class="event-date"><span aria-hidden="true">◷</span> 26 Kasım 2026 <span class="date-dot"></span> 17.00</p>
+                        <h3>Kod & Kahve: Tanışma Buluşması</h3>
+                        <p class="event-description">Kulüp üyeleriyle tanış, projelerden haberdar ol ve kahve eşliğinde yazılım üzerine sohbet et.</p>
+                        <div class="event-footer">
+                            <span class="event-location"><span aria-hidden="true">⌖</span> Öğrenci Merkezi, Kafe</span>
+                            <a href="mailto:yazilimkulubu@kampus.edu.tr?subject=Kod%20ve%20Kahve%20Bul%C5%9Fmas%C4%B1" aria-label="Kod ve Kahve buluşmasına katılım için iletişim kur">Katıl <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="event-card">
+                    <div class="event-visual visual-design">
+                        <span class="event-category">Atölye</span>
+                        <span class="visual-symbol" aria-hidden="true">◈</span>
+                        <span class="visual-caption">05 / UX + UI</span>
+                    </div>
+                    <div class="event-body">
+                        <p class="event-date"><span aria-hidden="true">◷</span> 3 Aralık 2026 <span class="date-dot"></span> 15.00</p>
+                        <h3>Figma ile Arayüz Tasarımı</h3>
+                        <p class="event-description">Kullanıcı odaklı tasarımın temel ilkelerini öğren ve Figma'da ilk mobil uygulama ekranlarını tasarla.</p>
+                        <div class="event-footer">
+                            <span class="event-location"><span aria-hidden="true">⌖</span> Tasarım Stüdyosu</span>
+                            <a href="mailto:yazilimkulubu@kampus.edu.tr?subject=Figma%20Tasarim%20Atolyesi" aria-label="Figma ile Arayüz Tasarımı atölyesine katılım için iletişim kur">Katıl <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="event-card">
+                    <div class="event-visual visual-hackathon">
+                        <span class="event-category">Hackathon</span>
+                        <span class="visual-symbol" aria-hidden="true">⚡</span>
+                        <span class="visual-caption">06 / BUILD</span>
+                    </div>
+                    <div class="event-body">
+                        <p class="event-date"><span aria-hidden="true">◷</span> 12–13 Aralık 2026 <span class="date-dot"></span> 10.00</p>
+                        <h3>24 Saatlik Kampüs Hackathonu</h3>
+                        <p class="event-description">Takımını kur, kampüs yaşamına çözüm üreten fikrini 24 saatte çalışan bir prototipe dönüştür.</p>
+                        <div class="event-footer">
+                            <span class="event-location"><span aria-hidden="true">⌖</span> Teknoloji Merkezi</span>
+                            <a href="mailto:yazilimkulubu@kampus.edu.tr?subject=Kampus%20Hackathonu" aria-label="24 Saatlik Kampüs Hackathonu etkinliğine katılım için iletişim kur">Katıl <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <a class="logo footer-logo" href="index.html"><span class="logo-mark" aria-hidden="true">&lt;/&gt;</span><span>Kampüs <strong>Yazılım</strong></span></a>
+            <p>Merak et. Üret. Paylaş. <span>© 2026 Kampüs Yazılım Kulübü</span></p>
+        </div>
+    </footer>
+</body>
+</html>
